@@ -1,2 +1,2 @@
-var contextPath='http://pbox.chinasoftinc.com/vbs';
+var contextPath='http://pbox.chinasoftinc.com/p-vbs';
 var pageRecorders='5';

@@ -72,9 +72,14 @@ function enquiryInfo(e,currentPage){
 						+"<td>"+list[i].termPeriod+"</td>"
 						+"<td>"+list[i].maturityDate+"</td>"
 						+"<td>"+list[i].depositAmount+"</td>"
-						+"<td>"+list[i].maturityAmount+"</td>"
-						+"<td>"+list[i].maturityStatus+"</td>"
-						+"<td><button type='button' class='btn btn-info' id='edit' onclick=\"edit('"+list[i].id+"')\"><i class='glyphicon glyphicon-edit icon-white'></i>Show</button>"
+						+"<td>"+list[i].maturityAmount+"</td>";
+					
+					if(null==list[i].maturityStatus){
+						html+="<td></td>";
+					   }else{
+					   	html+="<td>"+list[i].maturityStatus+"</td>"
+					   }
+						html+=+"<td><button type='button' class='btn btn-info' id='edit' onclick=\"edit('"+list[i].id+"')\"><i class='glyphicon glyphicon-edit icon-white'></i>Show</button>"
 				}
 				$(".infoCon").html(html);
 				$(".acctNotExist").hide();

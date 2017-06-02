@@ -14,7 +14,7 @@
 	</appender>     
 
 	<appender name="FILE" class="org.apache.log4j.RollingFileAppender">
-		<param name="File" value="D:/logs/vbs/system.log" />
+		<param name="File" value="E:/CI/logs/vbs/system.log" />
 		<param name="Append" value="true" />
 		 <param name="MaxFileSize" value="20000KB"/>
      	<param name="MaxBackupIndex" value="5"/>
@@ -23,7 +23,7 @@
 		</layout>  
 	</appender>
 	<appender name="BUSINESS" class="org.apache.log4j.RollingFileAppender">
-		<param name="File" value="D:/logs/vbs/business.log" />
+		<param name="File" value="E:/CI/logs/vbs/business.log" />
 		<param name="Append" value="true" />
 		<param name="MaxFileSize" value="20000KB"/>
      	<param name="MaxBackupIndex" value="100"/>
